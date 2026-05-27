@@ -1,0 +1,38 @@
+{
+  "profile": "chinese_sports_training_book",
+  "learned_from": [
+    "调控力量2（中文版）.pdf",
+    "超级训练.pdf"
+  ],
+  "layout_rules": {
+    "body_font": "SimSun, Songti SC, Noto Serif SC, serif",
+    "heading_font": "SimHei, Microsoft YaHei, Noto Sans SC, sans-serif",
+    "body_size_pt": 11,
+    "line_height": 1.85,
+    "paragraph_indent_em": 2,
+    "page_margin_mm": {
+      "top": 24,
+      "bottom": 24,
+      "inner": 28,
+      "outer": 24
+    },
+    "source_page_marker": "centered small gray text",
+    "images": "embedded figures only; no full-page source screenshots except cover",
+    "captions": "centered small Songti style text"
+  },
+  "translation_rules": {
+    "style": "formal Chinese sports training textbook",
+    "avoid": [
+      "AI assistant meta comments",
+      "line-by-line notes",
+      "full source-page screenshots in body",
+      "untranslated English term clutter"
+    ],
+    "prefer": [
+      "natural Chinese paragraphs",
+      "separate numbered action title and explanation",
+      "consistent terminology",
+      "book-like section flow"
+    ]
+  }
+}

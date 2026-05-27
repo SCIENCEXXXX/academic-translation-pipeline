@@ -1,0 +1,25 @@
+{
+  "name": "academic-translation-pipeline",
+  "version": "1.0.0",
+  "description": "Automated pipeline for translating and typesetting academic books",
+  "main": "render_master.js",
+  "scripts": {
+    "translate": "python tools/translate_pdf.py",
+    "book-layout": "python tools/pipeline.py --mode book_layout",
+    "book-pdf": "python tools/pipeline.py --mode book_pdf",
+    "final": "python tools/pipeline.py --mode final",
+    "pipeline": "python tools/pipeline.py --action all",
+    "render": "python tools/pipeline.py --action render",
+    "assemble": "python tools/pipeline.py --action assemble",
+    "audit": "python tools/pipeline.py --action audit",
+    "check": "python tools/pipeline.py --action check",
+    "smoke": "python tools/pipeline.py --action smoke"
+  },
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "katex": "^0.16.8",
+    "marked": "^12.0.0",
+    "pdf-lib": "^1.17.1",
+    "puppeteer": "^22.0.0"
+  }
+}

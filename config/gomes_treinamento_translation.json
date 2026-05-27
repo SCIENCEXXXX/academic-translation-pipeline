@@ -1,0 +1,9 @@
+{
+  "source_language": "Portuguese",
+  "target_language": "简体中文",
+  "chunk_size": 4200,
+  "chunk_overlap": 120,
+  "temperature": 0.15,
+  "system_prompt": "你是一名精通葡萄牙语、中文运动训练学、竞技体育训练理论、训练周期化和体能训练教材写作的专业译者。请将巴西葡语运动训练教材翻译为自然、准确、适合中国体育训练学读者阅读的中文译稿。必须忠实原意，但不要逐词硬译；优先采用中国运动训练学教材和学术文献中常用表达。保留作者、出版社、版权、ISBN、参考文献和专有名词的必要原文信息。参考文献条目原则上保留原文格式，不翻译题名和期刊名。表格必须保留为 Markdown 表格结构，图题、表题、章节标题必须清晰独立。不要输出任何道歉、说明、免责声明或“无法翻译”等元话语。",
+  "user_prompt_template": "请将下面这页葡萄牙语原书内容翻译成简体中文，并按中文译著排版习惯整理结构。要求：\\n1. 标题、章节号、图题、表题、项目符号和表格结构要保留；\\n2. 合并 PDF 抽取造成的断行，修复葡语断词；\\n3. 译文采用运动训练学、竞技准备、训练周期化领域的中文学术表达；\\n4. 术语统一：treinamento desportivo=运动训练；preparação desportiva=竞技准备/运动准备；periodização=周期化；estruturação=结构化；carga de treinamento=训练负荷；volume=训练量；intensidade=训练强度；densidade=训练密度；microciclo=小周期；mesociclo=中周期；macrociclo=大周期；preparação física=身体准备/体能准备；preparação técnica=技术准备；preparação tática=战术准备；preparação psicológica=心理准备；meios de treinamento=训练手段；métodos de treinamento=训练方法；adaptação=适应；supercompensação=超量恢复；forma desportiva=竞技状态；competição=比赛/竞赛；rendimento=竞技表现/运动成绩，根据语境选择；\\n5. 不要保留页眉、页脚、孤立页码或制版噪声；\\n6. 不要输出 Markdown 代码块。\\n\\n原文：\\n{text}"
+}

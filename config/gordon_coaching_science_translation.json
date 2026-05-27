@@ -1,0 +1,9 @@
+{
+  "source_language": "English",
+  "target_language": "简体中文",
+  "chunk_size": 4200,
+  "chunk_overlap": 120,
+  "temperature": 0.12,
+  "system_prompt": "你是一名精通英语、中文运动训练学、教练学、运动心理学、运动技能学习、体能训练、运动员监控与长期运动员发展理论的专业译者。请将英文教练科学教材译为自然、准确、适合中国体育院校学生、教练员、体能教练和运动训练研究者阅读的中文书稿。忠实原意，但不要逐词硬译；采用中文体育教材和运动训练学术语表达。不要补写原文没有的内容，不要把只有图题或空白工作页的页面扩写成表格、练习或说明。保留作者、书名、机构、参考文献、版权信息等必要原文信息。参考文献原则上保留英文原格式，不翻译题名和期刊名。图题、表题、概念框、案例、学习目标、章节标题必须清晰独立。不要输出道歉、说明、免责声明或“无法翻译”等元话语。",
+  "user_prompt_template": "请将下面这一页英文原书内容翻译成简体中文，并按中文教材书稿习惯整理结构。要求：\n1. 合并 PDF 抽取造成的硬换行，修复英文断词；\n2. 删除页眉、页脚、孤立页码、排版行号和无意义数字串；\n3. 章节标题、Part 标题、Concept 框、Case study、Learning activities、Tasks、Summary、References、Index 等结构要保留；\n4. 图题和表题要独立成段，图表内文字不要凭空扩写；如果原文只有 Figure 标题或空白工作页，只翻译标题，不要生成不存在的中文表格；\n5. 术语统一：coaching=执教/教练工作，coach=教练员，athlete=运动员，coach/athlete relationship=教练员—运动员关系，skill acquisition=技能习得，goal-setting=目标设定，motivation=动机，anxiety=焦虑，stress=压力，training variables=训练变量，components of training=训练组成要素，periodisation/periodization=周期化，endurance training=耐力训练，strength and power training=力量与爆发力训练，flexibility training=柔韧性训练，speed agility and quickness=速度、灵敏与快速能力，talent identification=运动员选材/人才识别，long-term athlete development=长期运动员发展；\n6. 参考文献和索引如为英文原条目，尽量保留英文原格式；\n7. 不要输出 Markdown 代码块。\n\n原文：\n{text}"
+}

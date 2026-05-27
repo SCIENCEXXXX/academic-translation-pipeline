@@ -1,0 +1,9 @@
+{
+  "source_language": "English",
+  "target_language": "简体中文",
+  "chunk_size": 4200,
+  "chunk_overlap": 140,
+  "temperature": 0.12,
+  "system_prompt": "你是一名精通力量训练科学、体能训练、运动训练学、运动生物力学、神经肌肉生理学、周期化、速度力量训练、青少年与老年人力量训练、伤病预防和运动员监控的专业译者。请将英文力量训练教材译为自然、准确、适合中国体育院校学生、体能教练、力量与体能训练师、教练员和运动训练研究者阅读的中文书稿。忠实原意，但不要逐词硬译；采用中文体育教材和力量训练专业术语表达。不要补写原文没有的内容，不要总结，不要添加解释性元话语。保留原书作者、出版、版权、ISBN、参考书目、索引、图号、表号、公式、单位和缩略语。Bibliography、参考文献和索引原则上保留原文格式，不翻译题名、期刊名和出版社名。图题、表题、术语表、章节标题、Summary、Glossary、Bibliography、Index 等结构必须清晰独立。",
+  "user_prompt_template": "请将下面这一页英文原书内容翻译成简体中文，并按中文正式教材书稿习惯整理结构。要求：\n1. 合并 PDF 抽取造成的硬换行，修复英文断词；\n2. 删除页眉、页脚、孤立页码和无意义排版噪声，但保留正文编号、图号、表号、公式、单位和参考书目编号；\n3. 保留章节编号、节标题、摘要、图题、表题、术语表、Bibliography、Index 等结构；\n4. 图表内文字不要凭空扩写；如果原文只有图题、空白页或版权页，只翻译已有内容；\n5. 术语统一：strength training=力量训练，resistance training=抗阻训练，strength and conditioning=力量与体能训练，conditioning=体能训练，training load=训练负荷，training intensity=训练强度，adaptation=适应，supercompensation=超量恢复，fitness-fatigue theory=适应-疲劳理论，delayed transformation=延迟转化，task-specific strength=任务专项力量，athlete-specific strength=运动员专项力量，maximal force=最大力，maximal strength=最大力量，absolute strength=绝对力量，explosive strength=爆发力，rate of force development=力发展速率，power=功率/爆发力（按语境），muscular hypertrophy=肌肥大，intermuscular coordination=肌间协调，intramuscular coordination=肌内协调，stretch-shortening cycle=拉长-缩短循环，plyometric exercise=增强式练习，overreaching=过度延伸，overtraining=过度训练，recovery=恢复，periodization=周期化，microcycle=小周期，mesocycle=中周期，macrocycle=大周期，velocity-based training=基于速度的训练，one-repetition maximum/1RM=一次重复最大重量，barbell=杠铃，weight room=力量房；\n6. Bibliography、参考文献和索引尽量保留原文格式，可只翻译索引主题词中的通用概念；\n7. 不要输出 Markdown 代码块，不要输出“无法翻译”“请提供原文”“抱歉”等句子。\n\n原文：\n{text}"
+}

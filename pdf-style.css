@@ -1,0 +1,143 @@
+
+/* ---------------------------------------------------------
+   高级书籍排版样式表 (Professional Academic Book Style)
+   --------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@400;700&display=swap');
+
+:root {
+    --primary-blue: #1e3a8a;
+    --text-main: #262626;
+    --text-light: #525252;
+    --border-color: #e5e5e5;
+    --bg-accent: #f8fafc;
+}
+
+body {
+    font-family: 'Noto Serif SC', 'Source Han Serif SC', serif;
+    font-size: 13pt;
+    line-height: 1.8;
+    color: var(--text-main);
+    background: white;
+    margin: 0;
+    padding: 0;
+    text-align: justify; /* 两端对齐 */
+    hyphens: auto;
+}
+
+#content {
+    padding: 2.54cm 3.18cm; /* 标准 Word/学术论文边距 */
+}
+
+/* 标题排版 */
+h1, h2, h3 {
+    font-family: 'Noto Sans SC', sans-serif;
+    color: var(--primary-blue);
+    page-break-after: avoid;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 4cm;
+    margin-bottom: 2em;
+    border-bottom: 3px double var(--primary-blue);
+    padding-bottom: 0.5em;
+    page-break-before: always;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    border-left: 8px solid var(--primary-blue);
+    padding-left: 0.5em;
+    background: var(--bg-accent);
+}
+
+h3 {
+    font-size: 1.3em;
+    margin-top: 1.5em;
+    color: #334155;
+}
+
+/* 段落排版 */
+p {
+    margin-bottom: 1.2em;
+    text-indent: 2em; /* 首行缩进 */
+}
+
+/* 表格专业样式 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2em 0;
+    font-size: 11pt;
+    page-break-inside: avoid;
+}
+
+th {
+    background-color: var(--primary-blue);
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+tr:nth-child(even) { background-color: #f1f5f9; }
+tr:hover { background-color: #e2e8f0; }
+
+/* 图片排版 */
+.img-container {
+    text-align: center;
+    margin: 2.5em 0;
+    page-break-inside: avoid;
+}
+
+img {
+    max-width: 85%;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.caption {
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 10.5pt;
+    color: var(--text-light);
+    margin-top: 10px;
+    font-style: italic;
+    text-indent: 0;
+}
+
+/* 公式样式 */
+.katex-display {
+    margin: 2em 0 !important;
+    padding: 15px;
+    background: #fafafa;
+    border-radius: 8px;
+    page-break-inside: avoid;
+}
+
+/* 引用与参考文献 */
+blockquote {
+    margin: 2em;
+    padding: 1em 2em;
+    border-left: 5px solid #cbd5e1;
+    background: #f1f5f9;
+    font-style: italic;
+    text-indent: 0;
+}
+
+/* 强制不缩进的情况 */
+h1 + p, h2 + p, h3 + p, .img-container + p, blockquote + p {
+    text-indent: 0;
+}

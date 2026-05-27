@@ -1,0 +1,22 @@
+{
+  "paths": {
+    "project_root": ".",
+    "translated_dir": "translated",
+    "images_dir": "images",
+    "manifest": "manifest.json",
+    "assembled_markdown": "translated/BOOK_MASTER_PIPELINE.md",
+    "html_output": "full_book.html",
+    "pdf_output": "output/BOOK_PIPELINE.pdf"
+  },
+  "audit": {
+    "required_headings": [
+      "#"
+    ],
+    "max_missing_images_to_pass": 0
+  },
+  "smoke": {
+    "sample_manifest": "manifest_smoke.json",
+    "assembled_markdown": "translated/BOOK_SMOKE.md",
+    "pdf_output": "output/BOOK_SMOKE.pdf"
+  }
+}
